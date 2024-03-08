@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/los-angeles/static/css/main.90d41cb3.css",
+    "main.js": "/los-angeles/static/js/main.a965a474.js",
+    "static/js/453.e0d3f065.chunk.js": "/los-angeles/static/js/453.e0d3f065.chunk.js",
+    "index.html": "/los-angeles/index.html",
+    "main.90d41cb3.css.map": "/los-angeles/static/css/main.90d41cb3.css.map",
+    "main.a965a474.js.map": "/los-angeles/static/js/main.a965a474.js.map",
+    "453.e0d3f065.chunk.js.map": "/los-angeles/static/js/453.e0d3f065.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90d41cb3.css",
+    "static/js/main.a965a474.js"
+  ]
+}

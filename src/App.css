@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+.slick-next:before,
+.slick-prev:before {
+  color: gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Collapsible__trigger::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border: solid transparent;
+  border-width: 5px;
+  border-top-color: black;
+  transition: transform 0.3s;
+  position: absolute;
+  right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Collapsible__trigger.is-open::after {
+  transform: rotate(180deg);
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-next {
+  right: 0px;
+}
+
+.slick-prev {
+  left: 0px;
+}
+
+.slick-next,
+.slick-prev {
+  width: 30px;
+  z-index: 2;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 0;
+}
+
+.description {
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 5;
+  margin-inline: auto;
+  padding-top: 36px;
 }
 
-.App-link {
-  color: #61dafb;
+.description img {
+  align-self: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.description p {
+  width: 80%;
+  margin-inline: auto;
+}
+
+
+.section3 .description {
+  flex-direction: row;
+  gap: 16px;
+  padding-block: 24px;
+}
+
+.Collapsible__trigger {
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #36465977;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15%;
+  background-color: #364659;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .description {
+    background-color: #fff9;
+    margin-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .section3 {
+    height: fit-content;
+  }
+
+  .section3 .description {
+    flex-direction: column;
+  }
+
+  .section3 .description p {
+    width: 100%;
+  }
+
+  footer {
+    padding: 12px 0;
+    text-align: center;
   }
 }

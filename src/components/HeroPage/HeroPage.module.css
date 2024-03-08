@@ -1,0 +1,21 @@
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .HeroPage{
+    height: 45vh;
+  }
+}

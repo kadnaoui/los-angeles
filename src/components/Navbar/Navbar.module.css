@@ -1,0 +1,55 @@
+.navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-block: 16px;
+  z-index: 2;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-self: flex-end;
+  align-self: center;
+  margin-inline-end: 20%;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 24px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+  color: inherit;
+}
+
+.navbar > a {
+  margin-inline-start: 20%;
+  width: fit-content;
+  gap: 12px;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    margin-inline-end: 10%;
+  }
+
+  .navbar ul li {
+    margin-right: 12px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+  }
+
+  .navbar > a {
+    margin-inline-start: 10%;
+    gap: 8px;
+  }
+}

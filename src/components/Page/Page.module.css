@@ -1,0 +1,53 @@
+.Background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.SelectBar {
+background-color: #364659;
+display: flex;
+height: 40px;
+padding-inline: 15%;
+}
+
+.SelectBar button{
+border: unset;
+background-color: transparent;
+color: #ABABAB;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+}
+
+
+.SelectBar .selectedSection {
+  background-color: #ABABAB;
+  color: #364659;
+}
+
+.selectedContent {
+  display: flex;
+}
+
+.card {
+  margin: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    background-color: #fff9;
+    margin-top: 20px;
+  }
+
+  .slick-next:before, .slick-prev:before {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .card {
+    margin: 36px auto;
+  }
+}

@@ -15,8 +15,8 @@ const SimpleSlider = (props) => {
   };
 
   const slides = slidesImgs.map(({ imgPath, imgAlt }, index) => (
-    <div className={styles.Slide}>
-      <img src={imgPath} alt={imgAlt} key={index} />
+    <div className={styles.Slide}  key={index}>
+      <img src={imgPath} alt={imgAlt} />
     </div>
   ));
 
